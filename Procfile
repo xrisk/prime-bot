@@ -1,1 +1,1 @@
-web: python prime-bot.py
+web: python prime-bot.py no-input
