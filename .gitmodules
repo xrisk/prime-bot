@@ -1,0 +1,3 @@
+[submodule "prime"]
+	path = prime
+	url = https://github.com/xrisk/prime
