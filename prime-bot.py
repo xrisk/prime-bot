@@ -22,10 +22,10 @@ def start_server():
       HOST, PORT = socket.gethostname(), int(os.environ['PORT'])
     else:
       HOST, PORT = "localhost", random.choice(range(5000, 10000))
-      httpd = BaseHTTPServer.HTTPServer(("", PORT), Handler)
-      print "serving at port", PORT
-      print 'FOO'
-      httpd.serve_forever()
+    httpd = BaseHTTPServer.HTTPServer(("", PORT), Handler)
+    print "serving at port", PORT
+    print 'FOO'
+    httpd.serve_forever()
 
 threading.Thread(target=prime.main).start()
 threading.Thread(target=start_server).start()
