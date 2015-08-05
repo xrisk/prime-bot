@@ -1,5 +1,5 @@
 import BaseHTTPServer
-import sys, random, os, threading
+import sys, random, os, threading, socket
 from prime import prime
 
 
